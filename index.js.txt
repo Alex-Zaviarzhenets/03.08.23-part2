@@ -1,0 +1,43 @@
+
+console.log('функция которая принимает 2 числовых элемента и выводит наименьший из них')
+console.log(' ')
+
+function findSmallValue (a, b){
+    return Math.min(a, b);
+}
+console.log(findSmallValue(23,45))
+
+console.log('функция которая принимает в консоль 2 числовых элемента и выводит все четные от большего к меньшему')
+console.log(' ')
+
+function findEvenNumbers(c, d){
+    for(let i = c; i<=d; i++){
+        if (i%2 === 0){
+            console.log(i);
+        }
+    }
+
+}
+findEvenNumbers(4,18)
+
+console.log('')
+
+
+
+
+let numbers = [1,2,3,4,5,6,7,8,9,10];
+let sumEvenNumbers = 0
+for ( let i = 0; i < numbers.length; i++){
+    if(numbers[i] % 2 === 0){
+        sumEvenNumbers += numbers[i];
+    }
+}
+console.log(sumEvenNumbers)
+
+let sumOddNumbers = 0
+for ( let i = 0; i < numbers.length; i++){
+    if(numbers[i] % 2 !== 0){
+        sumOddNumbers += numbers[i];
+    }
+}
+console.log(sumOddNumbers)
